@@ -1,0 +1,409 @@
+html{
+	position: relative;
+    min-height: 100%;
+}
+body{
+	margin: 0 0 60px;
+}
+
+.cabecalho{
+	background-color: #ed403f;
+	width: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.logo-img{
+	float: left;
+	margin: 10px 50px;
+	max-width: 300px;
+}
+
+.menu{
+	float: right;
+	margin:10px 11px;
+}
+
+.menu ul{
+	list-style: none;
+}
+
+.menu ul li{
+	display: inline-block;
+	margin: 0px 50px;
+}
+
+.menu-item-img{
+	width: 100px;
+}
+
+.menu ul li a p{
+	color: white;
+	font-size: 16px;
+	text-align: center;
+}
+
+.menu ul li.icon{
+	display: none;
+}
+
+/** section ações **/
+.acoes{
+	background-color: #B9675D;
+}
+.adicionar{
+	background-color: #c12e2a;
+	border-radius:5px;
+	color: #fff;
+	float: left;
+	margin: 5px;
+	padding: 15px;
+
+}
+
+.form-pesquisar{
+	float: left;
+	margin: 13px;
+}
+.form-group .input-pesquisar{
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	color: #ed403f;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.form-pesquisar, .form-group, .form-group .input-pesquisar{
+	width: 90%;
+}
+
+.botao{
+	margin-left: 5px;
+}
+
+/** Section relatorios **/
+
+.relatorios{}
+.opcao-relatorios{
+	list-style: none;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 20px;
+}
+
+.opcao-relatorios li a {
+	background-color: #ed403f;
+	float: left;
+	margin: 10px;
+	padding: 20px;
+	width: 100%;
+}
+
+.opcao-relatorios li a p{
+	color: #fff;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+/** Pagina lista **/
+.lista{
+	margin: 20px 0px;
+}
+
+.item-editar, .item-excluir{
+	color: #ED403F;
+	margin: 0px 5px;
+}
+
+a.item-editar, a.item-excluir:link{
+	text-decoration: none;
+}
+
+a.item-editar:hover, a.item-excluir:hover{
+	color: #000;
+}
+
+.pagination{
+	text-align: center;
+	display: inline-block;
+}
+
+/**
+* Section formulario
+**/
+.formulario{
+	margin: 20px 0px;
+}
+
+.titulo{
+	color: #B9675D !important;
+}
+
+
+/**
+* Footer
+**/
+
+.footer{
+	background-color: #666;
+	margin-top: 20px;
+	position: absolute;
+	bottom: 0px;
+	padding: 5px;
+	width: 100%;
+}
+
+.footer p{
+	color: #ccc;
+	margin-top: 10px;
+}
+
+
+/**
+* Login
+**/
+
+.caixa-login{
+	background-color: #ED403F;
+	border-radius: 10px;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	display: block;
+	width: 35%;
+	margin: auto;
+}
+
+.caixa-login > form{
+	padding: 20px;
+}
+
+.caixa-login > img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+	width: 60%;
+}
+
+.form-login label{
+	color: white;
+	font-size: 15px;
+}
+
+.form-login > input{
+	border: 1px solid #ccc;
+	color: #FC503B;
+	display: inline-block;
+	font-size: 15px;
+	width: 100%;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+}
+
+.botao-login{
+	background-color: #8f473d;
+	border: none;
+	color: #ccc;
+	font-size: 15px;
+	margin-top: 10px;
+	padding: 15px;
+	width: 100%;
+}
+
+.botao-login:hover{
+	background-color: #592c26;
+	opacity: 0.8;
+}
+
+.link-auxiliar{
+	color: white;
+	float: right;
+	margin: 0px 20px 20px;
+}
+
+.link-auxiliar:hover{
+	color: white;
+}
+
+/**
+* MEDIA QUERIES
+**/
+
+@media screen and (max-device-width: 767px) {
+ 	.logo-img{
+  		max-width: 200px;
+  		margin: 10px 5px;
+  	}
+
+	.menu ul li{
+		display: none;
+	}
+
+	.menu ul li.icon{
+		display: inline-block;
+		float: right;
+		position: absolute;
+		right: 0;
+		top: 20px;
+		margin-right: 25px;
+	}
+
+	.menu ul li.icon span{
+		color: white;
+		font-size: 20px;
+	}
+
+	.form-pesquisar{
+		margin: 0;
+	}
+
+	.form-pesquisar, .form-group, .form-group .input-pesquisar, .botao{
+		width: 100%;
+	}
+
+	.botao{
+		margin: 5px 0px;
+	}
+
+	/** QUANDO O USUARIO CLICAR NO BOTA MENU **/
+	.menu.responsivo ul{
+		float: left;
+	}
+
+	.menu.responsivo ul li{
+		display: inline;
+	}
+
+	.menu.responsivo ul li a img{
+		float: left;
+		position: relative;
+		left: -60px;
+		width: 20%;
+	}
+
+	.menu.responsivo ul li a{
+		display: inline-block;
+		margin-bottom: 50px;
+	}
+
+	.menu.responsivo ul li a p{
+		display: block;
+		float: left;
+		position: relative;
+		top: 21px;
+	}
+}
+
+
+/** Ipads **/
+@media (min-width: 768px) and (max-width: 1024px) {
+	.logo-img{
+  		max-width: 250px;
+  		margin: 10px auto;
+  		display: inline;
+  	}
+
+
+	.menu {
+		display: inline;
+		float: right;
+		margin-top: 15px;
+	}
+
+	.menu ul li{
+		display: inline-block;
+		margin: 0px 17px;
+	}
+
+  	.menu-item-img {
+		width: 50px;
+  	}
+
+  	.form-pesquisar{
+		margin: 0;
+	}
+
+	.form-pesquisar, .form-group, .form-group .input-pesquisar, .botao{
+		width: 100%;
+	}
+
+	.botao{
+		margin: 5px 0px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.logo-img{
+  		max-width: 250px;
+  		margin: 10px auto;
+  		display: inline;
+  	}
+
+
+	.menu {
+		display: inline;
+		float: right;
+		margin-top: 15px;
+	}
+
+	.menu ul li{
+		display: inline-block;
+		margin: 0px 17px;
+	}
+
+  	.menu-item-img {
+		width: 50px;
+  	}
+
+  	.form-pesquisar{
+		margin: 0;
+	}
+
+	.form-pesquisar, .form-group, .form-group .input-pesquisar, .botao{
+		width: 100%;
+	}
+
+	.botao{
+		margin: 5px 0px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.logo-img{
+  		max-width: 250px;
+  		margin: 10px auto;
+  		display: inline;
+  	}
+
+
+	.menu {
+		display: inline;
+		float: right;
+		margin-top: 15px;
+	}
+
+	.menu ul li{
+		display: inline-block;
+		margin: 0px 17px;
+	}
+
+  	.menu-item-img {
+		width: 50px;
+  	}
+
+  	.form-pesquisar{
+		margin: 0;
+	}
+
+	.form-pesquisar, .form-group, .form-group .input-pesquisar, .botao{
+		width: 100%;
+	}
+
+	.botao{
+		margin: 5px 0px;
+	}
+}

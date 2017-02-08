@@ -1,0 +1,20 @@
+div.jp-type-playlist div.jp-playlist a{
+	color: #FB503B !important;
+}
+
+div.jp-type-playlist div.jp-playlist a:hover {
+    color: #c91a03 !important;
+}
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current{
+	color: #FB503B !important;
+	font-style: bold !important;
+}
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current:hover {
+	color: #c91a03 !important;
+}
+
+.jp-audio, .jp-audio-stream, .jp-video{
+	border: 2px solid #FC503B !important;
+}

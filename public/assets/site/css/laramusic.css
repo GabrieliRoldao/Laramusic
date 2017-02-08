@@ -1,0 +1,196 @@
+/* Helpers */
+.clear{
+	clear: both;
+}
+
+.hr{
+	border: 1px solid  rgba(255,0,0, 0.3);
+}
+/* Colors */
+
+/* Resets */
+a:hover{
+	text-decoration-line: none;
+}
+/* Font sizes */
+/* Colors */
+/* Backgrounds */
+
+/***************
+	Layout
+*************** /
+/* Header */
+.header{
+	padding: 20px 5px;
+	width: 100%;
+}
+
+.form-search button.btnpesquisa{
+	background-color: #FC503B;
+	border: 0px;
+	color: #FFF;
+	float: right;
+	padding: 11px 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.img-logo{
+	max-width: 250px;
+}
+.form-search{
+	margin-top: 26px;
+	position: relative;
+	width: 100%;
+}
+.form-search input{
+	border: 1px solid #FC503B;
+	border-radius: 2px;
+	color: #ed403f;
+	font-weight: bold;
+	padding: 10px;
+	position: relative;
+	width: 100%;
+	z-index: 0;
+}
+.login{
+	background-color: #FC503B;
+	border-radius: 2px;
+	color: #FFF;
+	float: right;
+	font-weight: bold;
+	margin-top: 26px;
+	padding: 10px 24px;
+}
+
+/** Section albuns **/
+
+.albuns{
+	margin-top: 10px;
+}
+
+.titulo{
+	color: #555555;
+	font-family: 'Titillium Web';
+	font-size: 30px;
+}
+.album{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.lista-albuns{
+	margin: 5px;
+}
+
+.titulo-album{
+	color: #FC503B;
+	font-size: 25px;
+	margin-left: 35px;
+}
+
+.titulo-album:hover{
+	border-bottom: 2px solid #FC503B;
+}
+
+.img-album{
+	max-width: 100%;
+	z-index: 0;
+}
+
+.album-imagem{
+	float: left;
+	position: relative;
+}
+.album-hover{
+	background-color: #B34032;
+	color: white;
+	float: left;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top:0;
+	width: 100%;
+	z-index: 1;
+	transition: opacity 0.3s ease-in-out 0s;
+}
+.album-hover i{
+	border-radius: 100%;
+	background-color: #d87f74;
+	color: white;
+	margin-top: 40px;
+	font-size: 30px;
+	padding: 10px;
+}
+.album-hover:hover{
+	opacity: 0.8;
+}
+
+.info-album{
+	margin-bottom: 50px;
+}
+
+.nome-album{
+	color: #FC503B;
+	font-family: 'Titillium Web';
+	font-style: bold;
+	font-size: 30px;
+}
+
+.nome-artista{
+	color: #555555;
+	font-variant: small-caps;
+}
+
+/** Section estilos **/
+
+.estilos-musica{}
+.estilos{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.lista-estilos{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.lista-estilos li{
+	padding: 5px 5px;
+}
+
+a.estilo{
+	color: #FC503B;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+a.estilo:hover{
+	color: #555555;
+}
+
+/** Footer **/
+.footer{
+	background-color: #666666;
+	margin-top: 40px;
+	padding: 1%;
+}
+
+.texto-footer{
+	color: white;
+	font-weight: bold;
+}
+
+.midias{
+	margin: 20px;
+}
+
+.midias a{
+	color: white;
+	font-size: 30px;
+	margin: 0px 10px;
+}
