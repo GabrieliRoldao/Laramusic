@@ -1,7 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: gabic
- * Date: 09/02/2017
- * Time: 15:49
- */
+<footer class="footer text-center">
+    <p>Todos direitos reservados a Gabrieli Roldão</p>
+</footer>
