@@ -1,16 +1,24 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+/***
+ * Routes do Painel
+**/
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix' => 'painel', 'namespace' => 'Painel'], function ()
+{
+    Route::get('/', 'DashboardController@index')->name('painel.index');
+
+    Route::get('/estilos', 'EstiloController@carregarEstilos')->name('painel.estilos.listagem');
 });
+
+
+/**
+ * Routes do Site
+ **/
+
+Route::group(['namespace' => 'Site'], function ()
+{
+    Route::get('/', 'SiteController@index');
+});
+
+
