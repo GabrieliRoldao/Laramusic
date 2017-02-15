@@ -32,11 +32,11 @@ body{
 
 .menu ul li{
 	display: inline-block;
-	margin: 0px 50px;
+	margin: 0px 20px;
 }
 
 .menu-item-img{
-	width: 100px;
+	width: 50px;
 }
 
 .menu ul li a p{
@@ -49,23 +49,19 @@ body{
 	display: none;
 }
 
+.titulo{
+	color: #ed403f;
+
+}
+
 /** section ações **/
 .acoes{
 	background-color: #B9675D;
 }
-.adicionar{
-	background-color: #c12e2a;
-	border-radius:5px;
-	color: #fff;
-	float: left;
-	margin: 5px;
-	padding: 15px;
-
-}
 
 .form-pesquisar{
 	float: left;
-	margin: 13px;
+	margin-top: 20px;
 }
 .form-group .input-pesquisar{
 	border: 1px solid #CCC;
@@ -116,6 +112,18 @@ body{
 .item-editar, .item-excluir{
 	color: #ED403F;
 	margin: 0px 5px;
+}
+
+.item-adicionar{
+	color: #ED403F;
+}
+
+.adicionar{
+	color: #333333
+}
+.adicionar:link{
+	text-decoration: none;
+	color: #333333;
 }
 
 a.item-editar, a.item-excluir:link{
@@ -227,6 +235,22 @@ a.item-editar:hover, a.item-excluir:hover{
 
 .link-auxiliar:hover{
 	color: white;
+}
+
+
+/*
+* Box de informações
+*/
+
+.info-erro {
+	background-color: #880000;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	color: #FFFFFF;
+	font-size:15px;
+	padding:10px;
+	opacity: 0.7;
 }
 
 /**
@@ -372,7 +396,7 @@ a.item-editar:hover, a.item-excluir:hover{
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1366px){
 	.logo-img{
   		max-width: 250px;
   		margin: 10px auto;
