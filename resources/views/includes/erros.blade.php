@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: gabic
- * Date: 15/02/2017
- * Time: 14:26
- */
+@if (count($errors) > 0)
+    <div class="info-erro">
+        @foreach($errors->all() as $error)
+            {{ $error }}
+        @endforeach
+    </div>
+@endif

@@ -5,13 +5,13 @@
     <nav class="menu" id="menu">
         <ul>
             <li>
-                <a href="">
+                <a href=" ">
                     <img src="{{ url('assets/painel/imgs/albuns-laramusic.png') }}" alt="Albuns" class="menu-item-img">
                     <p>Albuns</p>
                 </a>
             </li>
             <li>
-                <a href="{{ route('painel.estilos.listagem') }}">
+                <a href="{{ route('painel.estilos.listar') }}">
                     <img src="{{ url('assets/painel/imgs/estilos-laramusic.png') }}" alt="Estilos" class="menu-item-img">
                     <p>Estilos</p>
                 </a>
