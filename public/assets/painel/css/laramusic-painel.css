@@ -50,9 +50,10 @@ body{
 }
 
 .titulo{
-	color: #ed403f;
-
+	color: #B9675D;
 }
+
+
 
 /** section ações **/
 .acoes{
@@ -61,7 +62,7 @@ body{
 
 .form-pesquisar{
 	float: left;
-	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .form-group .input-pesquisar{
 	border: 1px solid #CCC;
@@ -74,6 +75,7 @@ body{
 
 .form-pesquisar, .form-group, .form-group .input-pesquisar{
 	width: 90%;
+	margin-top: 10px;
 }
 
 .botao{
@@ -85,7 +87,7 @@ body{
 .relatorios{}
 .opcao-relatorios{
 	list-style: none;
-	margin-top: 40px;
+	margin-bottom: 40px;
 	margin-bottom: 40px;
 	margin-right: 20px;
 }
@@ -101,7 +103,7 @@ body{
 .opcao-relatorios li a p{
 	color: #fff;
 	font-size: 16px;
-	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /** Pagina lista **/
@@ -115,18 +117,32 @@ body{
 }
 
 .item-adicionar{
-	color: #ED403F;
+	color: #fff;
+	margin: 10px 0px;
 }
 
 .adicionar{
-	color: #333333
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	color: #fff;
+	background-color:#B9675D;
+	padding:10px;
 }
 .adicionar:link{
 	text-decoration: none;
-	color: #333333;
 }
 
-a.item-editar, a.item-excluir:link{
+.adicionar:hover{
+	color: #fff;
+	background-color: #880000;
+}
+
+.tabela{
+	margin-bottom:10px;
+}
+
+a.item-editar:link, a.item-excluir:link{
 	text-decoration: none;
 }
 
@@ -146,18 +162,12 @@ a.item-editar:hover, a.item-excluir:hover{
 	margin: 20px 0px;
 }
 
-.titulo{
-	color: #B9675D !important;
-}
-
-
 /**
 * Footer
 **/
 
 .footer{
 	background-color: #666;
-	margin-top: 20px;
 	position: absolute;
 	bottom: 0px;
 	padding: 5px;
@@ -166,7 +176,7 @@ a.item-editar:hover, a.item-excluir:hover{
 
 .footer p{
 	color: #ccc;
-	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 
@@ -178,7 +188,7 @@ a.item-editar:hover, a.item-excluir:hover{
 	background-color: #ED403F;
 	border-radius: 10px;
 	position: absolute;
-	top: 20%;
+	bottom: 20%;
 	left: 30%;
 	display: block;
 	width: 35%;
@@ -193,7 +203,7 @@ a.item-editar:hover, a.item-excluir:hover{
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-bottom: 10px;
 	width: 60%;
 }
 
@@ -217,7 +227,7 @@ a.item-editar:hover, a.item-excluir:hover{
 	border: none;
 	color: #ccc;
 	font-size: 15px;
-	margin-top: 10px;
+	margin-bottom: 10px;
 	padding: 15px;
 	width: 100%;
 }
@@ -242,17 +252,78 @@ a.item-editar:hover, a.item-excluir:hover{
 * Box de informações
 */
 
-.info-erro {
-	background-color: #880000;
-	-webkit-border-radius:2px;
-	-moz-border-radius:2px;
-	border-radius:2px;
-	color: #FFFFFF;
-	font-size:15px;
-	padding:10px;
-	opacity: 0.7;
+.info-erro, .info-sucesso {
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    color: #FFFFFF;
+    font-size:15px;
+    padding:10px;
+    opacity: 0.7;
 }
 
+.info-erro {
+	background-color: #880000;
+}
+
+.info-sucesso {
+    background-color: #2b669a;
+    display: none;
+}
+
+/**
+* Modal CSS
+**/
+
+.estilo-nome {
+    color: #ed403f;
+    font-size: 15px;
+}
+
+/**
+* Snackbar CSS
+**/
+
+#snackbar{
+	background-color: #2b669a;
+	border-radius: 2px;
+	color: #FFFFFF;
+	left:50%;
+	margin-left: -140px;
+	min-width: 280px;
+	padding: 15px;
+	position: fixed;
+	text-align: center;
+	top:30px;
+	visibility: hidden;
+	z-index: 1;
+}
+
+#snackbar.show{
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+	from {top: 0; opacity: 0;}
+	to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+	from {top: 0; opacity: 0;}
+	to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+	from {top: 30px; opacity: 1;}
+	to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+	from {top: 30px; opacity: 1;}
+	to {top: 0; opacity: 0;}
+}
 /**
 * MEDIA QUERIES
 **/
@@ -272,7 +343,7 @@ a.item-editar:hover, a.item-excluir:hover{
 		float: right;
 		position: absolute;
 		right: 0;
-		top: 20px;
+		bottom: 20px;
 		margin-right: 25px;
 	}
 
@@ -282,11 +353,11 @@ a.item-editar:hover, a.item-excluir:hover{
 	}
 
 	.form-pesquisar{
-		margin: 0;
+		margin-bottom: 15px;
 	}
 
 	.form-pesquisar, .form-group, .form-group .input-pesquisar, .botao{
-		width: 100%;
+		width: 99%;
 	}
 
 	.botao{
@@ -318,7 +389,7 @@ a.item-editar:hover, a.item-excluir:hover{
 		display: block;
 		float: left;
 		position: relative;
-		top: 21px;
+		bottom: 21px;
 	}
 }
 
@@ -335,7 +406,7 @@ a.item-editar:hover, a.item-excluir:hover{
 	.menu {
 		display: inline;
 		float: right;
-		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 
 	.menu ul li{
@@ -348,11 +419,11 @@ a.item-editar:hover, a.item-excluir:hover{
   	}
 
   	.form-pesquisar{
-		margin: 0;
+		margin-bottom: 15px;
 	}
 
 	.form-pesquisar, .form-group, .form-group .input-pesquisar, .botao{
-		width: 100%;
+		width: 99%;
 	}
 
 	.botao{
@@ -371,7 +442,7 @@ a.item-editar:hover, a.item-excluir:hover{
 	.menu {
 		display: inline;
 		float: right;
-		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 
 	.menu ul li{
@@ -384,11 +455,11 @@ a.item-editar:hover, a.item-excluir:hover{
   	}
 
   	.form-pesquisar{
-		margin: 0;
+		margin-bottom: 15px;
 	}
 
 	.form-pesquisar, .form-group, .form-group .input-pesquisar, .botao{
-		width: 100%;
+		width: 99%;
 	}
 
 	.botao{
@@ -407,7 +478,7 @@ a.item-editar:hover, a.item-excluir:hover{
 	.menu {
 		display: inline;
 		float: right;
-		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 
 	.menu ul li{
@@ -420,11 +491,11 @@ a.item-editar:hover, a.item-excluir:hover{
   	}
 
   	.form-pesquisar{
-		margin: 0;
+		margin-bottom: 15px;
 	}
 
 	.form-pesquisar, .form-group, .form-group .input-pesquisar, .botao{
-		width: 100%;
+		width: 99%;
 	}
 
 	.botao{

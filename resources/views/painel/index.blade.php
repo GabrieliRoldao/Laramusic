@@ -1,8 +1,14 @@
 @extends('layouts.template-painel')
 
+@section('titulo')
+    <title>LaraMusic Dashboard</title>
+@endsection
+
 @section('conteudo')
     <section class="relatorios">
+        @include('includes.acaoes-painel')
         <div class="container">
+
             <ul class="opcao-relatorios col-md-12">
                 <li class="col-md-6 text-center">
                     <a href="">

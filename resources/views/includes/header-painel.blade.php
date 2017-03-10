@@ -5,7 +5,7 @@
     <nav class="menu" id="menu">
         <ul>
             <li>
-                <a href=" ">
+                <a href="{{ route('painel.albuns.listar') }}">
                     <img src="{{ url('assets/painel/imgs/albuns-laramusic.png') }}" alt="Albuns" class="menu-item-img">
                     <p>Albuns</p>
                 </a>
@@ -17,7 +17,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="{{ route('painel.musicas.listar') }}">
                     <img src="{{ url('assets/painel/imgs/music-laramusic.png') }}" alt="Músicas" class="menu-item-img">
                     <p>Músicas</p>
                 </a>
@@ -35,7 +35,7 @@
                 </a>
             </li>
             <li class="icon">
-                <a href="javascript:void(0);" onclick="menu()">
+                <a href="javascript:void(0);">
                     <span class=" glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
                 </a>
             </li>
